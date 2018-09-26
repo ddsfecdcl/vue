@@ -1,22 +1,20 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <div id="app" class="app">
+    <CoorLayout></CoorLayout>
+    <FootLayout></FootLayout>
   </div>
 </template>
 
 <script>
+import CoorLayout from './components/layout/CoorLayout'
+import FootLayout from './components/layout/FootLayout'
 export default {
-  name: 'App'
+  name: 'App',
+  components: { CoorLayout, FootLayout }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.app{
+ margin: 0;
 }
 </style>
